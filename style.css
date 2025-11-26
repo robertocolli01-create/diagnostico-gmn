@@ -1,0 +1,146 @@
+/* Estilos Básicos e Reset */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Fundo suave */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4285F4; /* Azul Google */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-top: 0;
+    font-size: 2em; /* Tamanho do título */
+}
+
+/* Estilos da Área Principal e do Formulário */
+main {
+    max-width: 900px; /* Largura máxima no ecrã do computador */
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Campo de Input e Botão */
+.input-container {
+    display: flex;
+    flex-direction: column; /* Em telemóveis, os elementos ficam empilhados */
+    gap: 15px; /* Espaço entre o input e o botão */
+}
+
+input[type="text"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    flex-grow: 1; /* Permite que o input preencha o espaço disponível em ecrãs maiores */
+}
+
+button, .cta-button {
+    background-color: #EA4335; /* Vermelho atraente para CTA */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    text-decoration: none; /* Remove sublinhado dos links */
+    display: block; /* Garante que o link ocupe toda a largura */
+}
+
+button:hover, .cta-button:hover {
+    background-color: #d1392c;
+}
+
+/* Estilos do Resultado e Diagnóstico */
+#resultado-diagnostico h2 {
+    color: #4285F4;
+}
+
+.hidden {
+    display: none; /* O resultado estará escondido inicialmente e o JS irá mostrá-lo */
+}
+
+#relatorio {
+    border-top: 2px solid #eee;
+    padding-top: 20px;
+}
+
+#relatorio p {
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+/* Call to Action (CTA) Completo */
+.cta-completo {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #f0ad4e;
+    background-color: #fff9e6;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.cta-completo p {
+    color: #8a6d3b;
+    font-weight: bold;
+}
+
+.cta-button {
+    margin-top: 15px;
+    background-color: #34A853; /* Verde para o CTA principal */
+}
+
+.cta-button:hover {
+    background-color: #2c8c46;
+}
+
+/* Rodapé (Footer) */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #ddd;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #4285F4;
+    text-decoration: none;
+}
+
+/* RESPONSIVIDADE: Ajustes para Ecrãs Maiores (Tablets/Computadores) */
+@media (min-width: 768px) {
+    /* Acima de 768px, o input e o botão ficam lado a lado */
+    .input-container {
+        flex-direction: row;
+    }
+
+    /* O botão e o input dividem o espaço num layout mais largo */
+    input[type="text"] {
+        max-width: 60%; 
+    }
+    
+    button {
+        max-width: 40%; 
+    }
+}
